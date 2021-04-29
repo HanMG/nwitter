@@ -1,5 +1,10 @@
 import { authService, firebaseInstance } from 'fbase'
 import React from 'react'
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
+import {  
+  faGoogle,
+  faGithub,
+} from "@fortawesome/free-brands-svg-icons"
 
 const SocialLink = () => {
     const onSocialClick = async(event) => {
@@ -18,13 +23,15 @@ const SocialLink = () => {
     }
 
     return (
-        <div>
-            <button onClick={onSocialClick} name="google">
-                Continue with Google
-            </button>
-            <button onClick={onSocialClick} name="github">
-                Continue with Github
-            </button>
+        <div>            
+            <div className="authBtns">
+                <button onClick={onSocialClick} name="google" className="authBtn">
+                    Continue with Google <FontAwesomeIcon icon={faGoogle} />
+                </button>
+                <button onClick={onSocialClick} name="github" className="authBtn">
+                    Continue with Github <FontAwesomeIcon icon={faGithub} />
+                </button>            
+            </div>           
         </div>
     )
 }
