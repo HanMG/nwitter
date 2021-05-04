@@ -17,7 +17,7 @@ const Navigation = ({ userObj }) =>
                 >                    
                     <FontAwesomeIcon icon={faTwitter} color={"#04AAFF"} size="2x" />                    
                 </Link>
-                <div class="navSpan">
+                <div className="navSpan">
                     <span>
                         Home
                     </span>
@@ -32,7 +32,7 @@ const Navigation = ({ userObj }) =>
                     className="naviLink"
                 >
                     <FontAwesomeIcon icon={faUser} color={"#04AAFF"} size="2x" />
-                <div class="navSpan">
+                <div className="navSpan">
                     <span>
                         {userObj.displayName
                         ? `${userObj.displayName}의 Profile`
