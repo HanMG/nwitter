@@ -7,7 +7,7 @@
 input {
   all: unset;
   box-sizing: border-box;
-  appearance: none;
+  appearance: none;  
 }
 
 body {
@@ -124,6 +124,7 @@ form {
   text-align: center;
   border-radius: 20px;
   color: white;
+  box-sizing: border-box;
 }
 
 .factoryInput__label {
